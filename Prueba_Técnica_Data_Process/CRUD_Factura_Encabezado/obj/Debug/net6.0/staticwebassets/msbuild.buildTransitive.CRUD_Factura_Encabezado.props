@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CRUD_Factura_Encabezado.props" />
+</Project>
