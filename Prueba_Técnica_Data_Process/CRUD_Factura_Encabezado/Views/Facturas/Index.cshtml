@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<CRUD_Factura_Encabezado.Models.Encabezado>
+@{
+
+}
+
+<h2>Listado de facturas</h2>
+
+<a id="btnEditar" class="btn btn-primary" href="../Facturas/Agregar">Agregar</a>
+
+<table class="table" style="width:100%;">
+    <thead>
+        <tr>
+            <th>
+                <span>Id</span>
+            </th>
+            <th>
+                <span>Factura</span>
+            </th>
+            <th>
+                <span>Emisor</span>
+            </th>
+            <th>
+                <span>Fecha de emisión</span>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Factura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaEmision)
+            </td>
+            <td>
+                @{
+                    string enlaceEditar = $"../Facturas/Editar/{item.Id}";
+                    string enlaceDetalles = $"../Facturas/Detalles/{item.Id}";
+                    string enlaceEliminar = $"../Facturas/Eliminar/{item.Id}";
+                }
+                <a id="btnEditar" class="btn btn-primary" href="@enlaceEditar">Editar</a>
+                <a id="btnDetalles" class="btn btn-primary" href="@enlaceDetalles">Detalles</a>
+                <a id="btnEliminar" class="btn btn-primary" href="@enlaceEliminar">Eliminar</a>
+            </td>
+        </tr>
+    }
+</table>
+

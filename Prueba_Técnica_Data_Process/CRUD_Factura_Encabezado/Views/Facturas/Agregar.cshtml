@@ -1,0 +1,105 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model CRUD_Factura_Encabezado.Models.Encabezado
+@{
+}
+
+
+<div class="container">
+    <h2>Agregar factura</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Factura: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.EditorFor(model => model.Factura, new { htmlAttributes = new { @class = "form-control", style = "width: 250px;" } })
+                    @Html.ValidationMessageFor(model => model.Factura, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Emisor: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.EditorFor(model => model.Emisor, new { htmlAttributes = new { @class = "form-control", style = "width: 200px;" } })
+                    @Html.ValidationMessageFor(model => model.Emisor, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Folio Fiscal: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.EditorFor(model => model.FolioFiscal, new { htmlAttributes = new { @class = "form-control", style = "width: 250px;" } })
+                    @Html.ValidationMessageFor(model => model.FolioFiscal, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Fecha de Emisión: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.TextBoxFor(model => model.FechaEmision, new { @class = "form-control", style = "width: 250px;", type = "datetime-local" })
+                    @Html.ValidationMessageFor(model => model.FechaEmision, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Fecha de Cortificación: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.TextBoxFor(model => model.FechaCertificacion, new { @class = "form-control", style = "width: 250px;", type = "datetime-local" })
+                    @Html.ValidationMessageFor(model => model.FechaCertificacion, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Lugar de Expedición: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.EditorFor(model => model.LugarExpedicion, new { htmlAttributes = new { @class = "form-control", style = "width: 100px;" } })
+                    @Html.ValidationMessageFor(model => model.LugarExpedicion, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Metodo de Pago: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.DropDownListFor(model => model.IdMetodoPago, (IEnumerable<SelectListItem>)ViewData["IdMetodoPago"], "Elija una opción", new { @class = "form-control", style = "width: 300px;" })
+                    @Html.ValidationMessageFor(model => model.LugarExpedicion, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Forma de Pago: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.DropDownListFor(model => model.IdFormaPago, (IEnumerable<SelectListItem>)ViewData["IdFormaPago"], "Elija una opción", new { @class = "form-control", style = "width: 300px;" })
+                    @Html.ValidationMessageFor(model => model.IdFormaPago, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Moneda: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.DropDownListFor(model => model.IdMoneda, (IEnumerable<SelectListItem>)ViewData["IdMoneda"], "Elija una opción", new { @class = "form-control", style = "width: 250px;" })
+                    @Html.ValidationMessageFor(model => model.IdMoneda, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-3 d-flex justify-content-end fw-bold">
+                    <p class="my-1 py-0">Efecto del Comprobante: </p>
+                </div>
+                <div class="col-9 d-flex justify-content-start">
+                    @Html.DropDownListFor(model => model.IdEfectoComprobante, (IEnumerable<SelectListItem>)ViewData["IdEfectoComprobante"], "Elija una opción", new { @class = "form-control", style = "width: 250px;" })
+                    @Html.ValidationMessageFor(model => model.IdEfectoComprobante, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <input type="submit" value="Agregar" class="btn btn-success mb-3 mt-3" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+

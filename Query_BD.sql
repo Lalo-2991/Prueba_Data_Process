@@ -8,6 +8,7 @@ CREATE TABLE Encabezado
 (
 	id int PRIMARY KEY IDENTITY,
 	factura varchar(10) not null,
+	emisor varchar(50) not null,
 	folioFiscal varchar(32)not null,
 	fechaEmision datetime not null,
 	fechaCertificacion datetime not null,
@@ -97,8 +98,9 @@ GO
 
 
 INSERT INTO Encabezado VALUES
-('ADQRO18838', '7F541F5F031D46268B738D3E8B85019E', '2023-08-13T21:52:29','2023-08-13T21:52:30','54600', 1,1,1,1),
-('BEPRO19843', '10F225E51D7644968CB8AFD0C67056BF', '2023-08-13T22:45:21','2023-08-13T21:45:23','03800', 1,1,1,1)
+('ADQRO18838', 'SUBWAY','7F541F5F031D46268B738D3E8B85019E', '2023-08-13T21:52:29','2023-08-13T21:52:30','54600', 1,1,1,1),
+('BEPRO19843', 'Casa de Toño','10F225E51D7644968CB8AFD0C67056BF', '2023-08-13T22:45:21','2023-08-13T21:45:23','03800', 1,1,1,1)
 
 SELECT * FROM Encabezado
 truncate table encabezado
+DROP TABLE Encabezado

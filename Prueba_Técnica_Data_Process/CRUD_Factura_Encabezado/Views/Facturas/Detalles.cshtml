@@ -1,0 +1,106 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model CRUD_Factura_Encabezado.Models.Encabezado
+@{
+}
+
+<h2>Detalles de factura</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Id: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.Id</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Factura: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.Factura</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Emisor: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.Emisor</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Folio Fiscal: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.FolioFiscal</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Fecha de Emisión: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.FechaEmision</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Fecha de Certificación: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.FechaCertificacion</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Lugar de expedición: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.LugarExpedicion</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Metodo de Pago: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.IdMetodoPagoNavigation.NombreMetodoPago</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Forma de Pago: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.IdFormaPagoNavigation.NombreFormaPago</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Moneda: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.IdMonedaNavigation.NombreMoneda</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <p class="my-1 py-0">Efecto del Comprobante: </p>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <p class="my-1 py-0">@Model.IdEfectoComprobanteNavigation.NombreEfectoComprobante</p>
+        </div>
+
+        @{
+            string enlaceEditar = $"../Editar/{Model.Id}";
+            string enlaceExportar = $"../Exportar/{Model.Id}";
+        }
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <a id="btnEditar" class="btn btn-primary" href="@enlaceEditar">Editar</a>
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            <a id="btnExportar" class="btn btn-primary" href="@enlaceExportar">Exportar XML</a>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <a href="../Index" class="mt-2">Regresar a Listado de Facturas</a>
+        </div>
+    </div>
+</div>
+

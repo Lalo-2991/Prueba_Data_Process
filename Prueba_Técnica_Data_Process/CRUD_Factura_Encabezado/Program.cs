@@ -1,7 +1,15 @@
+using CRUD_Factura_Encabezado.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<FactEncabezadoContext>(opcion =>
+{
+    opcion.UseSqlServer(builder.Configuration.GetConnectionString("conexionDB"));
+});
 
 var app = builder.Build();
 
@@ -18,6 +26,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Facturas}/{action=Index}/{id?}");
 
 app.Run();
