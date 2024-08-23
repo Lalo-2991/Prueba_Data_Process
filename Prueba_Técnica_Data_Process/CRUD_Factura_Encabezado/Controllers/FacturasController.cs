@@ -58,13 +58,17 @@ namespace CRUD_Factura_Encabezado.Controllers
             return View();
         }
 
-        // POST: Facturas/Create
+        // POST: Facturas/Agregar
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Agregar([Bind("Id,Factura,Emisor,FolioFiscal,FechaEmision,FechaCertificacion,LugarExpedicion,IdMetodoPago,IdFormaPago,IdMoneda,IdEfectoComprobante")] Encabezado oEncabezado)
         {
+            ModelState.Remove("IdEfectoComprobanteNavigation");
+            ModelState.Remove("IdFormaPagoNavigation");
+            ModelState.Remove("IdMetodoPagoNavigation");
+            ModelState.Remove("IdMonedaNavigation");
             if (ModelState.IsValid)
             {
                 _context.Add(oEncabezado);
@@ -78,8 +82,8 @@ namespace CRUD_Factura_Encabezado.Controllers
             return View(oEncabezado);
         }
 
-        // GET: Facturas/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // GET: Facturas/Editar/5
+        public async Task<IActionResult> Editar(int? id)
         {
             if (id == null || _context.Encabezado == null)
             {
@@ -91,10 +95,10 @@ namespace CRUD_Factura_Encabezado.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdEfectoComprobante"] = new SelectList(_context.EfectoComprobante, "IdEfectoComprobante", "IdEfectoComprobante", encabezado.IdEfectoComprobante);
-            ViewData["IdFormaPago"] = new SelectList(_context.FormaPago, "IdFormaPago", "IdFormaPago", encabezado.IdFormaPago);
-            ViewData["IdMetodoPago"] = new SelectList(_context.MetodoPago, "IdMetodoPago", "IdMetodoPago", encabezado.IdMetodoPago);
-            ViewData["IdMoneda"] = new SelectList(_context.Moneda, "IdMoneda", "IdMoneda", encabezado.IdMoneda);
+            ViewData["IdEfectoComprobante"] = new SelectList(_context.EfectoComprobante, "IdEfectoComprobante", "NombreEfectoComprobante", encabezado.IdEfectoComprobante);
+            ViewData["IdFormaPago"] = new SelectList(_context.FormaPago, "IdFormaPago", "NombreFormaPago", encabezado.IdFormaPago);
+            ViewData["IdMetodoPago"] = new SelectList(_context.MetodoPago, "IdMetodoPago", "NombreMetodoPago", encabezado.IdMetodoPago);
+            ViewData["IdMoneda"] = new SelectList(_context.Moneda, "IdMoneda", "NombreMoneda", encabezado.IdMoneda);
             return View(encabezado);
         }
 
@@ -103,12 +107,17 @@ namespace CRUD_Factura_Encabezado.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Factura,FolioFiscal,FechaEmision,FechaCertificacion,LugarExpedicion,IdMetodoPago,IdFormaPago,IdMoneda,IdEfectoComprobante")] Encabezado encabezado)
+        public async Task<IActionResult> Editar(int id, [Bind("Id,Factura,Emisor,FolioFiscal,FechaEmision,FechaCertificacion,LugarExpedicion,IdMetodoPago,IdFormaPago,IdMoneda,IdEfectoComprobante")] Encabezado encabezado)
         {
             if (id != encabezado.Id)
             {
                 return NotFound();
             }
+
+            ModelState.Remove("IdEfectoComprobanteNavigation");
+            ModelState.Remove("IdFormaPagoNavigation");
+            ModelState.Remove("IdMetodoPagoNavigation");
+            ModelState.Remove("IdMonedaNavigation");
 
             if (ModelState.IsValid)
             {
@@ -130,10 +139,10 @@ namespace CRUD_Factura_Encabezado.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdEfectoComprobante"] = new SelectList(_context.EfectoComprobante, "IdEfectoComprobante", "IdEfectoComprobante", encabezado.IdEfectoComprobante);
-            ViewData["IdFormaPago"] = new SelectList(_context.FormaPago, "IdFormaPago", "IdFormaPago", encabezado.IdFormaPago);
-            ViewData["IdMetodoPago"] = new SelectList(_context.MetodoPago, "IdMetodoPago", "IdMetodoPago", encabezado.IdMetodoPago);
-            ViewData["IdMoneda"] = new SelectList(_context.Moneda, "IdMoneda", "IdMoneda", encabezado.IdMoneda);
+            ViewData["IdEfectoComprobante"] = new SelectList(_context.EfectoComprobante, "IdEfectoComprobante", "NombreEfectoComprobante", encabezado.IdEfectoComprobante);
+            ViewData["IdFormaPago"] = new SelectList(_context.FormaPago, "IdFormaPago", "NombreFormaPago", encabezado.IdFormaPago);
+            ViewData["IdMetodoPago"] = new SelectList(_context.MetodoPago, "IdMetodoPago", "NombreMetodoPago", encabezado.IdMetodoPago);
+            ViewData["IdMoneda"] = new SelectList(_context.Moneda, "IdMoneda", "NombreMoneda", encabezado.IdMoneda);
             return View(encabezado);
         }
 

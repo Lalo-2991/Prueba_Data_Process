@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\views\\facturas\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\views\\facturas\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\views\\facturas\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\views\\facturas\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\models\\encabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\models\\encabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T03:41:12.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T03:37:53.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Facturas\\Editar.cshtml",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Views\\Facturas\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Facturas\\Editar.cshtml",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Views\\Facturas\\Editar.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T02:29:57.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Agregar.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Facturas\\Agregar.cshtml",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Views\\Facturas\\Agregar.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Facturas\\Agregar.cshtml",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Views\\Facturas\\Agregar.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAIAwwCQAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T00:43:18.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Encabezado.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Models\\Encabezado.cs",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Models\\Encabezado.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Models\\Encabezado.cs",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Models\\Encabezado.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T15:05:18.009Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
